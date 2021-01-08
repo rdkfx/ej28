@@ -1,0 +1,20 @@
+html
+head
+    link(rel='stylesheet', href='/stylesheet/style.css')
+    link(rel='stylesheet', href='/stylesheet/bootstrap.min.css')
+body
+p.t1 Contacto
+
+include menu
+
+h1 Enviar mensaje
+form(method="post", action="/vercontacto")
+  label Asunto
+  br
+  input(type="text", name="asunto")
+  br
+  label Mensaje
+  br
+  textarea(cols="40", rows="10", name="mensaje")
+  br
+  input(type="submit", value="Enviar mensaje")

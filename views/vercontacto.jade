@@ -1,0 +1,18 @@
+html
+head
+    link(rel='stylesheet', href='/stylesheet/style.css')
+    link(rel='stylesheet', href='/stylesheet/bootstrap.min.css')
+body
+p.t1 Contacto
+
+include menu
+
+h1 Enviar mensaje
+
+-for(i in lista)
+      
+      - var as = lista[i].asunto
+      - var mn = lista[i].mensaje
+
+  p ASUNTO: #{as}
+  p MENSAJE: #{mn}
